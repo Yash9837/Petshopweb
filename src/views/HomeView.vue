@@ -1,18 +1,45 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+   
+    <ImageComponent />
+    <SearchComponent @search="handleSearch" />
+    <PopularProducts />
+    <ServicesCard />
+    <ProductsCard />
+    <JobsCard />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+
+import ImageComponent from '@/components/ImageComponent.vue';
+import SearchComponent from '@/components/SearchComponent.vue';
+import PopularProducts from '@/components/PopularProducts.vue';
+import ServicesCard from '@/components/ServicesCard.vue';
+import ProductsCard from '@/components/ProductsCard.vue';
+import JobsCard from '@/components/JobsCard.vue';
 
 export default {
-  name: "HomeView",
+  name: 'HomeView',
   components: {
-    HelloWorld,
+    
+    ImageComponent,
+    SearchComponent,
+    PopularProducts,
+    ServicesCard,
+    ProductsCard,
+    JobsCard
   },
-};
+  methods: {
+    handleSearch(searchTerm) {
+      // Implement your search functionality here
+      console.log('Searching for:', searchTerm);
+      // Example: Call a method to process search results or filter data
+    },
+},
+}
 </script>
+
+<style scoped>
+/* You can add your view-specific styles here */
+</style>

@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "lint": "eslint --ext .js,.vue src, vue-cli-service lint",
+    "lint:fix": "eslint --fix --ext .js,.vue src",
+    "format": "prettier --write \"src/**/*.{js,vue,css,scss,html}\"",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
@@ -22,10 +25,10 @@
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^8.0.3",
-    "prettier": "^2.4.1",
+    "prettier": "^2.8.8",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
