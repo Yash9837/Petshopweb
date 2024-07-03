@@ -25,7 +25,7 @@
           <router-link to="/profile" class="navbar-item">
             <i class="fas fa-user"></i>
           </router-link>
-          <router-link to="/post" class="navbar-item post-button">
+          <router-link to="/PostAd" class="navbar-item post-button">
             Post <i class="fas fa-plus"></i>
           </router-link>
         </div>

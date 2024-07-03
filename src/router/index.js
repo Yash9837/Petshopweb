@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import HomeView from '../views/HomeView.vue';
-
+import PostAdForm from '@/components/PostAdForm.vue';
 Vue.use(VueRouter);
 
 const routes = [
@@ -19,6 +19,11 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
   },
+  {
+    path: '/PostAd',
+    name: 'PostAd',
+    component: PostAdForm
+  }
 ];
 
 const router = new VueRouter({
