@@ -22,7 +22,7 @@
             <i class="fas fa-heart"></i>
             <span class="notification-badge">2</span>
           </router-link>
-          <router-link to="/profile" class="navbar-item">
+          <router-link to="/Profile" class="navbar-item">
             <i class="fas fa-user"></i>
           </router-link>
           <router-link to="/PostAd" class="navbar-item post-button">

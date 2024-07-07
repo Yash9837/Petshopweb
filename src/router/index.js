@@ -2,6 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import PostAdForm from '@/components/PostAdForm.vue';
+import UserProfile from '@/components/UserProfile.vue';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -23,6 +25,11 @@ const routes = [
     path: '/PostAd',
     name: 'PostAd',
     component: PostAdForm
+  },
+  {
+    path: '/Profile',
+    name: 'Profile',
+    component: UserProfile
   }
 ];
 
