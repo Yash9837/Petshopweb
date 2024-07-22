@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import PostAdForm from '@/components/PostAdForm.vue';
 import UserProfile from '@/components/UserProfile.vue';
-
+import AdDetailsPage from '../components/AdDetailsPage.vue';
 Vue.use(VueRouter);
 
 const routes = [
@@ -30,6 +30,12 @@ const routes = [
     path: '/Profile',
     name: 'Profile',
     component: UserProfile
+  },{
+    path: '/ad-details',
+    name: 'AdDetails',
+    component: AdDetailsPage,
+    
+    
   }
 ];
 
