@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <!-- My Ads Section -->
+    
     <div class="my-ads">
       <h3 @click="toggleAdsDropdown">My Ads <span>{{ adsDropdown ? '▲' : '▼' }}</span></h3>
       <ul v-if="adsDropdown">
@@ -43,7 +43,7 @@
       </ul>
     </div>
 
-    <!-- Manage Profile Section -->
+    
     <div class="manage-profile">
       <h3>Manage Your Profile</h3>
       <form @submit.prevent="saveProfile" class="profile-form">
@@ -122,7 +122,7 @@ export default {
       this.editMode = !this.editMode;
     },
     saveProfile() {
-      // Normally you would save the profile data here
+      
       alert('Profile saved!');
     },
     triggerFileInput() {
@@ -142,7 +142,7 @@ export default {
       this.adsDropdown = !this.adsDropdown;
     },
     goToMessages() {
-      // Redirect to messages or show messages dialog
+      
       alert('Go to messages!');
     },
   },
