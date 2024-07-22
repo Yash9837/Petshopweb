@@ -45,11 +45,9 @@
     },
     methods: {
       sendMessage() {
-        // Handle sending message to the seller
         console.log('Message sent:', this.message);
       },
       sendWhatsAppMessage() {
-        // Handle sending WhatsApp message
         const phoneNumber = '300-482952878';
         const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(this.message)}`;
         window.open(url, '_blank');
@@ -77,6 +75,7 @@
   .image-container {
     flex: 1;
     text-align: center;
+    padding: 10px; 
   }
   .ad-image {
     width: 100%;
@@ -87,11 +86,13 @@
   .ad-details {
     flex: 2;
     text-align: left;
+    padding: 10px; 
   }
   .ad-details h2 {
     margin-bottom: 10px;
     color: #333;
     font-size: 24px;
+    padding-top: 10px; 
   }
   .ad-details .price {
     color: #b12704;
@@ -127,6 +128,7 @@
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #ddd;
+    padding: 10px; 
   }
   .message-to-seller h3 {
     margin-bottom: 10px;
@@ -158,6 +160,18 @@
   }
   .message-to-seller button:hover {
     background-color: #2980b9;
+  }
+ 
+  @media (max-width: 768px) {
+    .ad-content {
+      flex-direction: column;
+    }
+    .image-container {
+      order: 1;
+    }
+    .ad-details {
+      order: 2;
+    }
   }
   </style>
   
